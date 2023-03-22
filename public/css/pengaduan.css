@@ -1,0 +1,273 @@
+/* .pengaduan {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+
+.nav {
+  z-index: 100;
+    overflow: hidden;
+  /* background-color: #333; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* overflow: hidden; */
+  /* position: fixed; */
+    /* z-index: 10; */
+    /* position: absolute; */
+    /* height: 80px; */
+    /* width: 100%; */
+    background-color: #F9E9CB;
+    /* position: relative; */
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title a {
+    display: inline-block;
+    font-size: 22px;
+    color: #1c1c1c;
+    padding: 20px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    margin-top: 10px;
+    /* width: auto; */
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    /* background-color: #000000; */
+    color: #000000;
+
+}
+
+.nav>.nav-links>a:hover {
+    background-color: #c2ad8698;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #F9E9CB;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+.nav_pengaduan {
+    /* display: flex; */
+
+}
+
+.register {
+    width: 65%;
+    height: 100px;
+    /* background-color: #1c1c1c; */
+    font-size: 40px;
+
+}
+
+.register p {
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.register_container {
+    margin-top: 20px;
+    /* position: absolute; */
+    width: 35%;
+    height: 100px;
+    /* background-color: rgb(226, 24, 24); */
+}
+
+.register_container a {
+    text-decoration: none;
+    /* padding-bottom: 10px; */
+    /* display: none; */
+    margin-left: 60px;
+    font-size: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Rectangle {
+    width: 268px;
+    height: 63px;
+    background: #53EA2D;
+    border-radius: 100px;
+}
+
+.display_pengaduan {
+    display: flex;
+}
+
+.isi_pengaduan1 {
+    width: 10%;
+    height: 300px;
+    /* background-color: #1c1c1c; */
+}
+
+.isi_pengaduan2 {
+    width: 10%;
+    height: 300px;
+    /* background-color: #1c1c1c; */
+}
+
+.isi_pengaduan {
+    width: 80%;
+    height: 300px;
+    /* left: 61px; */
+    /* top: 273px; */
+    background: #CBBEA5;
+    border-radius: 20px;
+    display: flex;
+}
+
+.Rectangle1 {
+
+    width: 20%;
+    height: 40px;
+    background-color: #A79E8C;
+    border-radius: 18px;
+}
+
+.Rectangle1 p {
+    color: #ffff;
+    text-align: center;
+}
+
+.Rectangle2 {
+    width: 60%;
+    height: 40px;
+    /* background-color: #1c1c1c; */
+}
+
+.Rectangle3 {
+    width: 20%;
+    height: 40px;
+    /* background-color: #d92121eb; */
+    justify-content: space-around;
+    display: flex;
+}
+
+.pengaduan_delete img {
+    margin-left: 13%;
+    height: 100%;
+}
+
+.pengaduan_delete {
+    background-color: #ff1a1a;
+
+    border-radius: 100%;
+    width: 55px;
+    height: 100%;
+}
+
+.pengaduan_glass {
+    background-color: #978686;
+
+    border-radius: 100%;
+    width: 55px;
+    height: 100%;
+}
+
+.pengaduan_glass img {
+    margin-left: 13%;
+    height: 95%;
+}
+
+.pengaduan_edit {
+    background-color: #FFB800;
+
+    border-radius: 100%;
+    width: 55px;
+    height: 100%;
+}
+
+.pengaduan_edit img {
+    margin-left: 20%;
+
+    height: 90%;
+}
+
+.nav_atas {
+    width: 100%;
+    height: 60px;
+    /* background-color: #ff1a1a; */
+}

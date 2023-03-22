@@ -1,0 +1,53 @@
+.login{
+    margin: auto;
+    width: 50%;
+    height: 40%;
+    /* background-color: black; */
+}
+.login h1{
+    text-align: center;
+    font-size: 200%;
+
+}
+.nav_login{
+    display: flex;
+    justify-content: space-between;
+}   
+.nav_login1{
+    background-color: #F9E9CB;
+    width: 50%;
+    height: 70px;
+}
+.nav_login img{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 3%;
+    height: 40%;
+}
+.nav_back{
+    width: 50%;
+    height: 70px;
+    background-color: #F9E9CB;
+}
+.nav_back p{
+    position: absolute;
+    font-size: 30px;
+    color: #0f0f0f;
+    padding-top: 10px;
+    padding-left: 9%;
+}
+
+.loginicon{
+    display: flex;
+}
+
+.href_login{
+    /* display: none; */
+    font-size: 20px;
+    color: #232221;
+}
+
+a img {
+    width: 5%;
+    height: 20%;
+}
